@@ -139,8 +139,7 @@ background-color: rgba(0,0,0,0);
 }
 .navbar-right
 {
-  padding-right: 66px;
-  padding-top: 14px;
+  padding-right: 66px;  
   background-color: #fff;
 }
 .navbar-toggle {
@@ -1926,7 +1925,18 @@ textarea.form-control {
 /*header*/
 
 @media screen and (min-width:992px) and (max-width: 1199px) {
+    .navbar-right
+{
+  padding-right: 1px;
+}
 
+  .navbar-brand
+  {
+    font-size:medium;
+    /*padding-left: 5px;*/
+    padding-top: 24px;
+    width:auto;
+  }
   /*about section */
   .aboutRight {
     left: 0;
@@ -2758,7 +2768,6 @@ textarea.form-control {
 @media screen and (min-width:280px) and (max-width: 480px) {
 
   /*navigation bar*/
-
   .navbar-brand
   {
     padding-left: 5px;
@@ -2776,14 +2785,21 @@ textarea.form-control {
     z-index: 999;
     position: absolute;
     color: #fff;
-    width: 100%;
-    /**/
+    width: 100%;    
+    -webkit-zindex:999;
+    -moz-zindex:999;
+    -o-z-index: 999;  
+    -ms-z-index: 999; 
   }
   .navbar-collapse
   {
     margin-top: 0px;
     border: none;
     z-index: 999;
+    -webkit-zindex:999;
+    -moz-zindex:999;
+    -o-z-index: 999;
+    -ms-z-index: 999; 
   }
 
   /*about us section*/
@@ -3081,5 +3097,4 @@ textarea.form-control {
       float: none;
       display: table;
   }
-
 }

@@ -9,6 +9,7 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/multipage.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/mysystem.css">
 
 
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
@@ -19,26 +20,41 @@
     <![endif]-->
 </head>
 
-<style type="text/css">
-    .mytext {
-        margin: 27px 0px;
-    }
-
-    .navbar-brand p {
-        color: #AF1F24;
-    }
-
-    .navbar-brand small {
-        color: #AF1F24;
-    }
-</style>
 <body>
+    <script>
+    var o;
+    var b = true;
+    var bottomNum = 10;
+    function toggleSwitch() {
+        if (screen.width < 480) {
+            if (b) {
+                o = $('#carousel-id').css('visibility');
+                bottomNum = $('#headerServices').css('margin-bottom');
+                $('#carousel-id').css('visibility', 'hidden');
+                $('#headerH1').css('visibility', 'hidden');
+                $('#headerH6').css('visibility', 'hidden');
+                $('#headerServices').css('margin-bottom', '50px');
+                b = false;
+            }
+            else {
+                $('#carousel-id').css('visibility', o);
+                $('#headerH1').css('visibility', o);
+                $('#headerH6').css('visibility', o);
+                $('#headerServices').css('margin-bottom', bottomNum);
+                b = true;
+            }
+        }
+    }
+    </script>
+
+
+
     <!-- navigation bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch()">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -64,11 +80,7 @@
     </nav>
     <div class="clearfix"></div>
     <!-- about us section -->
-
-
-
-
-    <div class="contair-fluid">
+    <div id="carousel-id" class="contair-fluid">
         <div class="row">
             <div class="col-sm-12  col-md-12 col-lg-12">
                 <img src="assets/system/system.png" class="img-responsive">
@@ -77,14 +89,10 @@
     </div>
 
     <section class="about" id="about">
-        <header class="defaultHeaderAbout">
-            <h1 class="wow fadeIn" data-wow-duration="5s">系統開發</h1>
-            <h6 class="wow fadeIn" data-wow-duration="5s">SYSTEM DEVELOPMENT</h6>
+        <header id="headerServices" class="defaultHeaderAbout">
+            <h1 id="headerH1" class="wow fadeIn" data-wow-duration="5s">系統開發</h1>
+            <h6 id="headerH6" class="wow fadeIn" data-wow-duration="5s">SYSTEM DEVELOPMENT</h6>
         </header>
-
-
-
-
 
         <div class="container">
             <br>
@@ -156,16 +164,14 @@
                 </div>
 
             </div>
-            <hr class="featurette-divider">
-
-
-            <div class="row">
+            <!--     <hr class="featurette-divider"> -->
+            <!--<div class="row">
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-xs-12">
-                    <!--  <img src="img/p2.png"> -->
+
                     <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys6.png">
-                    <!---->
+
                 </div>
-               <!-- <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
+                <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
                     <h2 class="mytext text-center">成功案例</h2>
                     <p class="text-center">
                         我們已有成功執行企業軟體開發經驗，因而能快速了解客戶需求，提出合適建議並制定出企業專屬的系統架構及流程。
@@ -191,7 +197,7 @@
                     <p>5.安瀚視特(股)公司-廠商施工管理系統</p>
                 </div>-->
 
-            </div>
+        </div>
 
         </div>
 
@@ -226,8 +232,10 @@
             </div>
         </div>
     </footer>
-
-
+    <a id="back-to-top" href="#" class="btn btn-warning btn-lg back-to-top"
+       role="button" title="Back to Top" data-toggle="tooltip" data-placement="top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.mixitup.js"></script>
@@ -237,5 +245,35 @@
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/multipage.js"></script>
+    <style type="text/css">
+        .back-to-top {
+            cursor: pointer;
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            $('#back-to-top').tooltip('show');
+        });
+    </script>
 </body>
 </html>

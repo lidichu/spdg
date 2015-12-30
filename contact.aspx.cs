@@ -54,7 +54,7 @@ public partial class cpmtact : System.Web.UI.Page
         string message = txtMessage.Value;
         string keyword = sltKeyword.Value;
 
-        string content = "公司名稱：" + companyName + "<p/>聯絡人：" + name + "<p/>客戶電話：" + "<p/>客戶手機：" + phone + "<p/>客戶信箱"
+        string content = "公司名稱：" + companyName + "<p/>聯絡人：" + name + "<p/>客戶電話：" + "<p/>客戶手機：" + phone + "<p/>客戶信箱："
             + mail + "<p/>客戶地址：" + address + "<p/>客戶網站：" + webSite + "<p/>詢問事項：" + optionItem + "<p/>詢問內容：" + message + "<p/>搜尋關鍵字為：" + keyword;
         SendEmail se = new SendEmail();
         try

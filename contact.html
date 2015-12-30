@@ -9,6 +9,7 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/multipage.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/mycontact.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -17,56 +18,23 @@
     <![endif]-->
 </head>
 
-<!-- my css -->
-<style type="text/css">
-    .Flexible-container {
-        position: relative;
-        /*  padding-bottom: 56.25%;*/
-        padding-bottom: 403px;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-    }
-
-        .Flexible-container iframe,
-        .Flexible-container object,
-        .Flexible-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 400px;
-        }
-
-    .navbar-brand p {
-        color: #AF1F24;
-    }
-
-    .navbar-brand small {
-        color: #AF1F24;
-    }
-
-    .myform-control {
-        width: 300px;
-    }
-
-    .check {
-        height: 50px;
-        background-color: #999;
-        margin: 21px 0 0 103px;
-    }
-
-    .mytxt {
-        width: 50%;
-    }
-    .divCenter{
-        margin:0 auto;
-        text-align:center;
-    }
-</style>
-
-<!--my css end  -->
 <body>
+    <script>
+    var o;
+    var b = true;
+    function toggleSwitch() {
+        if (b) {
+            o = $('#carousel-id').css('visibility');
+            $('#carousel-id').css('visibility', 'hidden');
+            b = false;
+        }
+        else {
+            $('#carousel-id').css('visibility', o);
+            b = true;
+        }
+    }
+    </script>
+
     <!-- navigation bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -74,7 +42,7 @@
 
 
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch()">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -101,7 +69,7 @@
 
     <!-- 插入滿版 -->
 
-    <div class="contair-fluid">
+    <div id="carousel-id" class="contair-fluid">
         <div class="row">
             <div class="col-sm-12  col-md-12 col-lg-12">
                 <img src="assets/about/contact.png" class="img-responsive">
@@ -145,7 +113,7 @@
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12"><h4>您的信箱</h4></label>
-                            <input type="email" class="form-control wow fadeIn" placeholder="keyin your E-mail address" data-wow-duration="1s">
+                            <input type="email" class="form-control wow fadeIn" placeholder="keyin your E-mail address..." data-wow-duration="1s">
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12"><h4>您的地址</h4></label>
@@ -155,7 +123,11 @@
                             <label class="col-lg-3 col-xs-12"><h4>您的網站</h4></label>
                             <input type="text" class="form-control wow fadeIn" placeholder="keyin your website docmain name..." data-wow-duration="1s">
                         </div>
-                    </form>
+
+
+                  <!--   </form> -->
+
+
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 col-xs-12"><h4>詢問項目</h4></label>
@@ -197,7 +169,11 @@
                         <button class="send wow fadeIn" data-wow-duration="1s">送出表單</button>
                         <button class="send wow fadeIn" data-wow-duration="1s">清除</button>
                     </div>
+
+
+                    </form>
                 </div>
+
             </div>
         </div>
     </section>

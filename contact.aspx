@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="cpmtact.aspx.cs" Inherits="cpmtact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="cpmtact" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>禾益網路資訊系統/新北網頁設計/台北網頁設計/系統開發</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,6 +17,7 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="../dist/css/bootstrapValidator.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mycontact.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -57,59 +58,6 @@
             return validateResult;
         }
     </script>
-
-    <style type="text/css">
-        .Flexible-container {
-            position: relative;
-            /*  padding-bottom: 56.25%;*/
-            padding-bottom: 403px;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
-
-            .Flexible-container iframe,
-            .Flexible-container object,
-            .Flexible-container embed {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 400px;
-            }
-
-        .navbar-brand p {
-            color: #AF1F24;
-        }
-
-        .navbar-brand small {
-            color: #AF1F24;
-        }
-
-        .myform-control {
-            width: 300px;
-        }
-
-        .check {
-            height: 50px;
-            background-color: #999;
-            margin: 21px 0 0 103px;
-        }
-
-        .mytxt {
-            width: 50%;
-        }
-
-        .divCenter {
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        #span_result {
-            color: Red;
-            font-size: 12px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" method="post" runat="server">
