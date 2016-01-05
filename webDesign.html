@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/multipage.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/mywebDesign.css">
-
-
+    <link href="css/goTop.css" type="text/css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -22,40 +21,12 @@
 
 
 <body>
-    <script>
-        var o;
-        var b = true;
-        var bottomNum = 10;
-        function toggleSwitch() {
-            if (screen.width < 480 && navigator.platform.indexOf("iPhone") != -1) {
-                if (b) {
-                    o = $('#carousel-id').css('visibility');
-                    bottomNum = $('#headerServices').css('margin-bottom');
-                    $('#carousel-id').css('visibility', 'hidden');
-                    $('#headerH1').css('visibility', 'hidden');
-                    $('#headerH6').css('visibility', 'hidden');
-                    $('#headerServices').css('margin-bottom', '50px');
-                    b = false;
-                }
-                else {
-                    $('#carousel-id').css('visibility', o);
-                    $('#headerH1').css('visibility', o);
-                    $('#headerH6').css('visibility', o);
-                    $('#headerServices').css('margin-bottom', bottomNum);
-                    b = true;
-                }
-            }
-        }
-    </script>
-
-
-
     <!-- navigation bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch()">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch('50px')">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -107,8 +78,12 @@
                     <!-- <img src="img/p1.png"> -->
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <h2 class="mytext text-center">美觀與實用</h2>
-                    <p class="text-center">我們不只講究好看的網頁設計，也要求網站使用上的實用性與便利性。</p>
+                    <h2 class="mytext text-center mytext-color">美觀與實用</h2>
+                     
+                    <h4 class="text-center">禾益網路資訊系統</h4>
+                    <p class="text-center">因應貴公司網站需求，不論是電腦版，手機版，或是響應式設計，皆為您『量身訂製做客製化』官方網站，電子商務網站，我們要求在設計上的美觀，更要求在網站上的實用性以及便利性。設計『符合貴公司特色』的形象官方網站。</p>
+                    <p class=" text-center">製作網站前的溝通與規劃，是非常重要的，需先行瞭解貴公司的想法，需求，偏好風格以及公司的企業形象，才能有效針對貴公司提供合適的網站動線以及專業的規劃製作。</p>
+
                 </div>
 
             </div>
@@ -122,45 +97,78 @@
                 </div>
                 <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
                     <br>
-                    <h2 class="mytext text-center">溝通與規劃</h2>
-                    <p class=" text-center">『好的開始是成功的一半』，製作前的溝通與網頁設計規劃，是相當重要的。請先讓我們瞭解您的想法、需求與偏好風格，才能給您合適的網站動線與規劃。</p>
+                    <h2 class="mytext text-center mytext-color">響應式網頁設計(Responsive Web Design)</h2>
+                    <h4 class="text-center">簡稱RWD</h4>
+                    <p class=" text-center">又稱適應性網頁、自適應網頁設計、回應式網頁設計、多螢網頁設計。
+在不同解析度下改變網頁頁面的佈局排版，讓不同的設備都可以正常瀏覽同一網站，提供最佳的視覺體驗。
+</p>                    
+
+
+                   <h4 class="text-center">響應式網頁設計的優點</h4> 
+                   <p class=" text-center">企業形象官網跟上潮流
+響應式網站是這兩年的最新趨勢，這一項技術仍在成長階段，因此當您比其他相關同行領先製作響應式網站時，會使用到許多新的設計技術，例如：滾動視差網頁設計…。客戶自然就會對您的網站留下更好的印象。</p>
+                    <h4 class="text-center">響應式網頁設計的最大目的</h4> 
+                    <p class=" text-center">讓不同裝置的用戶，都能得到最佳的顯示效果，自然就能夠抓住行動用戶的目光。 </p>
+                    <p class=" text-center">註：不過有些網站可能不適合響應式網頁設計，比如入口網站、商城網站、遊戲網站等，需要閱讀大量文字或大量操作的狀況下，就無法達到響應式網頁設計的理想要求。</p>
                 </div>
 
             </div>
 
             <br>
             <hr class="featurette-divider">
+
+
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                     <div class="col-md-4 col-sm-4 col-xs-12"> 
+
                     <br>
-                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/web/web3.png">
+                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/web/web4.png">
                     <!-- <img src="img/p1.png"> -->
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <h2 class="mytext text-center">時間與進度</h2>
-                    <p class=" text-center">網頁設計是有一定製程與製作時間的，請跟著我們的【網頁設計製作流程】步驟，能加快網站製作的速度與完成度。</p>
+                    <!-- <h2 class="mytext text-center">時間與進度</h2>
+                    <p class=" text-center">網頁設計是有一定製程與製作時間的，請跟著我們的【網頁設計製作流程】步驟，能加快網站製作的速度與完成度。</p> -->
+
+                    <h2 class="mytext text-center mytext-color">SEO與網站排名</h2>
+                    <h4 class="text-center">
+                        如何讓您的網站增加更多的曝光量、來客數?                       
+                    </h4>
+                    <h4 class="text-center">如何讓使用者在有需求時，可以在第一時間發現您?</h4>
+                    <p class="text-center">SEO就是所謂的 Search engine optimization ，也就是搜尋引擎最佳化，經過SEO化的網頁可以在搜尋引擎中自然獲得較佳的名次，被點選的機率必然增加，對於您的業務量及訪客也將大幅的提升。</p>
+                    <p>簡單說SEO（搜尋引擎最佳化）就是利用對現有搜尋引擎的需求瞭解，再配合它的要求在您網站做各種配合的工作，包含網頁內容的調整，使您的網站更容易被網路上的各搜尋引擎找到並且能取得最佳的排名名次。</p>
+                    <h4 class="mytext text-center">
+                        SEO網站優化的好處
+                    </h4>
+                        <p class="text-center">SEO的效果是會提高網站排名、關鍵字排名、點選率、吸引潛在顧客及開發新的顧客。讓時間累積信任度（Trust Rank），排名循序漸進的向上爬升。</p>
+
+
+
+
+
                 </div>
 
             </div>
             <hr class="featurette-divider">
 
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-xs-12">
-                    <!--  <img src="img/p2.png"> -->
                     <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/web/web4.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
                     <h2 class="mytext text-center">SEO與網站排名</h2>
                     <p class="text-center">
-                        如何讓您的網站增加更多的曝光量、來客數?
-                        如何讓使用者在有需求時，可以在第一時間發現您?
+                        如何讓您的網站增加更多的曝光量、來客數? 如何讓使用者在有需求時，可以在第一時間發現您?                      
                     </p>
-
-                    <p>SEO就是所謂的 Search engine optimization ，也就是搜尋引擎最佳化，經過SEO化的網頁</p>可以在搜尋引擎中自然獲得較佳的名次，被點選的機率必然增加，對於您的業務量及訪客也將大幅的提升。</p>
+                    <p class="text-center">SEO就是所謂的 Search engine optimization ，也就是搜尋引擎最佳化，經過SEO化的網頁可以在搜尋引擎中自然獲得較佳的名次，被點選的機率必然增加，對於您的業務量及訪客也將大幅的提升。</p>
+                    <p>簡單說SEO（搜尋引擎最佳化）就是利用對現有搜尋引擎的需求瞭解，再配合它的要求在您網站做各種配合的工作，包含網頁內容的調整，使您的網站更容易被網路上的各搜尋引擎找到並且能取得最佳的排名名次。</p>
+                    <h2 class="mytext text-center">
+                        SEO網站優化的好處
+                    </h2>
+                        <p class="text-center">SEO的效果是會提高網站排名、關鍵字排名、點選率、吸引潛在顧客及開發新的顧客。讓時間累積信任度（Trust Rank），排名循序漸進的向上爬升。</p>
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
 
@@ -187,7 +195,7 @@
                     <h1>公司地址</h1>
                     <div class="borderBottom"></div>
                     <p>242新北市新莊區新泰路306號9樓</p>
-                    <p>上班時間:8:40-6:40</p>
+                    <p>上班時間:AM8:40-PM5:40</p>
                 </div>
                 <div class="col-lg-12 copyright padding0">
                     <p>版權所有©禾益網路資訊系統股份有限公司</p>
@@ -208,35 +216,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/multipage.js"></script>
-    <style type="text/css">
-        .back-to-top {
-            cursor: pointer;
-            position: fixed;
-            bottom: 0;
-            right: 20px;
-            display: none;
-        }
-    </style>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 50) {
-                    $('#back-to-top').fadeIn();
-                } else {
-                    $('#back-to-top').fadeOut();
-                }
-            });
-            // scroll body to 0px on click
-            $('#back-to-top').click(function () {
-                $('#back-to-top').tooltip('hide');
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 800);
-                return false;
-            });
-
-            $('#back-to-top').tooltip('show');
-        });
-    </script>
+    <script src="js/goTop.js"></script>
+    <script src="js/iphoneShowList.js"></script>
 </body>
 </html>

@@ -10,48 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/multipage.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/myservice.css">
-
+    <link href="css/goTop.css" type="text/css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 </head>
 
 <body>
-    <script>
-        var o;
-        var b = true;
-        var bottomNum = 10;
-        function toggleSwitch() {
-            if (screen.width < 480 && navigator.platform.indexOf("iPhone") != -1) {
-                if (b) {
-                    o = $('#carousel-id').css('visibility');
-                    bottomNum = $('#headerServices').css('margin-bottom');
-                    $('#carousel-id').css('visibility', 'hidden');
-                    $('#headerH1').css('visibility', 'hidden');
-                    $('#headerH6').css('visibility', 'hidden');
-                    $('#headerServices').css('margin-bottom', '100px');
-                    b = false;
-                }
-                else {
-                    $('#carousel-id').css('visibility', o);
-                    $('#headerH1').css('visibility', o);
-                    $('#headerH6').css('visibility', o);
-                    $('#headerServices').css('margin-bottom', bottomNum);
-                    b = true;
-                }
-            }
-        }
-    </script>
-
     <!-- navigation bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch()">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch('100px')">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -150,6 +125,11 @@
                         <p>C.網站空間租用服務</p>
                     </div>
                 </div>
+                <a href="contact.html">
+                    <button type="button" class="btn btn-danger col-lg-8 col-lg-offset-2 col-xs-8 col-xs-offset-2 wow flipInX" data-wow-duration="1s">
+                        <h4>連絡我們</h4>
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -172,7 +152,7 @@
                     <h1>公司地址</h1>
                     <div class="borderBottom"></div>
                     <p>242新北市新莊區新泰路306號9樓</p>
-                    <p>上班時間:8:40-6:40</p>
+                    <p>上班時間:AM8:40-PM5:40</p>
                 </div>
                 <div class="col-lg-12 copyright padding0">
                     <p>版權所有©禾益網路資訊系統股份有限公司</p>
@@ -193,35 +173,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/multipage.js"></script>
-    <style type="text/css">
-        .back-to-top {
-            cursor: pointer;
-            position: fixed;
-            bottom: 0;
-            right: 20px;
-            display: none;
-        }
-    </style>
-    <script type="text/javascript">
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-
-        $('#back-to-top').tooltip('show');
-    });
-    </script>
+    <script src="js/iphoneShowList.js"></script>
+    <script src="js/goTop.js"></script>
 </body>
 </html>

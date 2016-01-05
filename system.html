@@ -9,8 +9,8 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/multipage.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <link rel="stylesheet" type="text/css" href="css/mysystem.css">
-
+    <link rel="stylesheet" type="text/css" href="css/mysystem.css">
+    <link href="css/goTop.css" type="text/css" rel="stylesheet" />
 
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -21,40 +21,12 @@
 </head>
 
 <body>
-    <script>
-    var o;
-    var b = true;
-    var bottomNum = 10;
-    function toggleSwitch() {
-        if (screen.width < 480) {
-            if (b) {
-                o = $('#carousel-id').css('visibility');
-                bottomNum = $('#headerServices').css('margin-bottom');
-                $('#carousel-id').css('visibility', 'hidden');
-                $('#headerH1').css('visibility', 'hidden');
-                $('#headerH6').css('visibility', 'hidden');
-                $('#headerServices').css('margin-bottom', '50px');
-                b = false;
-            }
-            else {
-                $('#carousel-id').css('visibility', o);
-                $('#headerH1').css('visibility', o);
-                $('#headerH6').css('visibility', o);
-                $('#headerServices').css('margin-bottom', bottomNum);
-                b = true;
-            }
-        }
-    }
-    </script>
-
-
-
     <!-- navigation bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch()">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="toggleSwitch('50px')">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -103,10 +75,9 @@
                     <!-- <img src="img/p1.png"> -->
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <h2 class="mytext text-center"> 系統規劃</h2>
-                    <p class="text-center">我們會根據您現行的作業方式與流程，提出系統需求及架構建議，規劃出適合且方便之動線與流程，協助客戶整合軟體系統及現行作業，促使作業人員與電腦系統做合適的搭配。</p>
+                    <h2 class="mytext text-center mytext-color"> 系統規劃</h2>
+                    <p class="text-center">禾益網路資訊系統根據您現行的作業方式與流程，提出系統需求及架構建議，規劃出適合且方便之動線與流程，協助貴公司整合軟體系統及現行作業，促使作業人員與電腦系統做合適的搭配。並在開發過程中我們將與您密切連繫每一個環節以減少溝通誤差，確保流程無誤。</p>
                 </div>
-
             </div>
             <hr class="featurette-divider">
 
@@ -114,11 +85,12 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-xs-12">
                     <!--  <img src="img/p2.png"> -->
-                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys2.png">
+                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys3.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
-                    <h2 class="mytext text-center">開發流程</h2>
-                    <p class="text-center">開發過程中我們將與您密切連繫每一個環節以減少溝通誤差，確保流程無誤。</p>
+                    <h2 class="mytext text-center mytext-color">程式設計＆系統開發</h2>
+                    <p class="text-center">提供客制化的程式製作，舉凡商品上下架管理、購物車系統、會員制度建置、電子商務系統、企業資源管理系統、企業內部網站、客戶關係資料庫建立系統...等，也可依客戶需求結合金流系統進行線上交易。</p>
+                    <p class="text-center">提供客制化的人事管理系統、行政管理系統、會計管理系統、會計管理系統…，符合貴公司完整需求開發專屬您的管理系統，並能依照貴公司日後成長需求進而增加程式系統內容。</p>
                 </div>
 
             </div>
@@ -127,12 +99,13 @@
             <hr class="featurette-divider">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys3.png">
+                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys4.png">
                     <!-- <img src="img/p1.png"> -->
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <h2 class="mytext text-center">程式設計</h2>
-                    <p class="text-center">提供客制化的程式製作，舉凡商品上下架管理、購物車系統、會員制度建置、電子商務系統、企業資源管理系統、企業內部網站、客戶關係資料庫建立系統...等，也可依客戶需求結合金流系統進行線上交易。</p>
+                    <h2 class="mytext text-center mytext-color">後端管理</h2>
+                    <p class="text-center">配合前端的內容，我們提供管理者一個既簡單又方便操作的後端管理系統，只要幾個簡單的動作，管理者即可隨時更新網站資料，達到使用者與管理者互動交流作用的平台。</p>
+                    <!-- <p class="text-center">提供客制化的人事管理系統、行政管理系統、會計管理系統、會計管理系統…，符合貴公司完整需求開發專屬您的管理系統，並能依照貴公司日後成長需求進而增加程式系統內容。</p> -->
                 </div>
 
             </div>
@@ -142,28 +115,30 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-xs-12">
                     <!--  <img src="img/p2.png"> -->
-                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys4.png">
+                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys5.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-md-pull-4 col-xs-12">
-                    <h2 class="mytext text-center">後端管理</h2>
-                    <p class="text-center">配合前端的內容，我們提供管理者一個既簡單又方便操作的後端管理系統，只要幾個簡單的動作，管理者即可隨時更新網站資料，達到使用者與管理者互動交流作用的平台。</p>
+                    <h2 class="mytext text-center mytext-color">資料安全維護</h2>
+                    <p class="text-center">為確保資料的安全性，網站最高的管理者能去設定其他管理人員的使用權限，免於有心人士的破壞。</p>
                 </div>
 
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row">
+             <!--<div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys5.png">
-                    <!-- <img src="img/p1.png"> -->
+                    <img class="featurette-image img-circle img-responsive pull-left wow flipInX" src="assets/system/sys6.png">
+                  
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <h2 class="mytext text-center">資料安全維護</h2>
                     <p class="text-center">為確保資料的安全性，網站最高的管理者能去設定其他管理人員的使用權限，免於有心人士的破壞。</p>
                 </div>
 
-            </div>
+            </div> -->
+
+
             <!--     <hr class="featurette-divider"> -->
             <!--<div class="row">
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-xs-12">
@@ -224,7 +199,7 @@
                     <h1>公司地址</h1>
                     <div class="borderBottom"></div>
                     <p>242新北市新莊區新泰路306號9樓</p>
-                    <p>上班時間:8:40-6:40</p>
+                    <p>上班時間:AM8:40-PM5:40</p>
                 </div>
                 <div class="col-lg-12 copyright padding0">
                     <p>版權所有©禾益網路資訊系統股份有限公司</p>
@@ -245,35 +220,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/multipage.js"></script>
-    <style type="text/css">
-        .back-to-top {
-            cursor: pointer;
-            position: fixed;
-            bottom: 0;
-            right: 20px;
-            display: none;
-        }
-    </style>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 50) {
-                    $('#back-to-top').fadeIn();
-                } else {
-                    $('#back-to-top').fadeOut();
-                }
-            });
-            // scroll body to 0px on click
-            $('#back-to-top').click(function () {
-                $('#back-to-top').tooltip('hide');
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 800);
-                return false;
-            });
-
-            $('#back-to-top').tooltip('show');
-        });
-    </script>
+    <script src="js/goTop.js"></script>
+    <script src="js/iphoneShowList.js"></script>
 </body>
 </html>

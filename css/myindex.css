@@ -29,11 +29,11 @@
   padding: 10px;
 }
 
-.my_container h3{
+/*.my_container h3{
     color: #fff;
 
 }
-
+*/
 
 .smtext{
   color: #fff;
@@ -59,3 +59,35 @@
     
 
     }
+
+
+/*@media(min-width:1200px){
+
+    .my_container h3{color: #000;}
+
+}*/
+/*@media(min-width:992px){
+
+    .my_container h3{color: #000;}
+
+}*/
+@media(min-width:768px){
+
+    .my_container h3{
+      color: #fff;
+      font-size: 50px;
+      font-weight: 500;
+      font-family: 微軟正黑體;
+
+    }
+
+}
+@media(max-width:767px){
+
+    .my_container h3{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+    font-family: 微軟正黑體;}
+
+}
