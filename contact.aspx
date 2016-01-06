@@ -9,7 +9,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="keywords" content="新北網頁設計、新北網頁、新北網頁設計公司、新北系統開發、台北網頁設計、台北網頁、台北網頁設計公司、台北系統開發、高雄網頁設計、高雄網頁、高雄網頁設計公司、高雄系統開發、台中網頁、台中網頁設計公司、台中系統開發、桃園網頁設計、桃園網頁、桃園網頁設計公司、桃園系統開發、系統開發、網頁設計、響應式網站、SEO、網站優化、程式設計、人事系統、管理系統、客戶管理系統、商品攝影、型錄攝影、商業攝影" />
+    <meta name="description" content="新北網頁設計、新北網頁、新北網頁設計公司、新北系統開發、台北網頁設計、台北網頁、台北網頁設計公司、台北系統開發、高雄網頁設計、高雄網頁、高雄網頁設計公司、高雄系統開發、台中網頁、台中網頁設計公司、台中系統開發、桃園網頁設計、桃園網頁、桃園網頁設計公司、桃園系統開發、系統開發、網頁設計、響應式網站、SEO、網站優化、程式設計、人事系統、管理系統、客戶管理系統、商品攝影、型錄攝影、商業攝影" />
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/multipage.css" />
@@ -17,7 +18,8 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="../dist/css/bootstrapValidator.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mycontact.css">
+    <link rel="stylesheet" type="text/css" href="css/mycontact.css"/>
+    <link href="css/goTop.css" type="text/css" rel="stylesheet" />
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -84,11 +86,11 @@
                         <li><a href="index.html">首頁</a></li>
                         <li><a href="about.html">關於我們</a></li>
                         <li><a href="services.html">服務項目</a></li>
-                        <li><a href="team.html">專案介紹</a></li>
+                        <!--<li><a href="team.html">專案介紹</a></li>-->
                         <li><a href="webDesign.html">網頁設計</a></li>
-                        <li><a href="system.html">系統開發</a></li>
+                        <!--<li><a href="system.html">系統開發</a></li>-->
                         <li><a href="howwork.html">製作流程</a></li>
-                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="contact.aspx">聯絡我們</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -258,7 +260,7 @@
                         <h1>公司地址</h1>
                         <div class="borderBottom"></div>
                         <p>242新北市新莊區新泰路306號9樓</p>
-                        <p>上班時間:8:40-6:40</p>
+                        <p>上班時間:AM8:40-PM5:40</p>
                     </div>
                     <div class="col-lg-12 copyright padding0">
                         <p>版權所有©禾益網路資訊系統股份有限公司</p>
@@ -279,6 +281,7 @@
         <script src="js/multipage.js"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
+        
     </form>
 </body>
 </html>
