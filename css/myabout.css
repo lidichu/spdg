@@ -20,3 +20,8 @@
     position: relative;
     bottom: 1px;
     }
+
+    .myTextcolor{
+        color: #999;
+        font-family: 微軟正黑體;
+    }

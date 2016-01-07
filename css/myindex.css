@@ -29,15 +29,7 @@
   padding: 10px;
 }
 
-<<<<<<< HEAD
 
-=======
-/*.my_container h3{
-    color: #fff;
-
-}
-*/
->>>>>>> 50c9734e391944377a0ee70447f317bf41c81daf
 
 .smtext{
   color: #fff;
@@ -70,7 +62,6 @@
     .my_container h3{color: #000;}
 
 }*/
-<<<<<<< HEAD
 
 /*@media(min-width:992px){
   .my_container h3{
@@ -81,18 +72,11 @@
 
     }*/
 
-=======
-/*@media(min-width:992px){
-
-    .my_container h3{color: #000;}
-
-}*/
->>>>>>> 50c9734e391944377a0ee70447f317bf41c81daf
 @media(min-width:768px){
 
     .my_container h3{
       color: #fff;
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 500;
       font-family: 微軟正黑體;
 
@@ -103,11 +87,7 @@
 
     .my_container h3{
       color: #fff;
-<<<<<<< HEAD
       font-size: 18px;
-=======
-      font-size: 15px;
->>>>>>> 50c9734e391944377a0ee70447f317bf41c81daf
       font-weight: 500;
     font-family: 微軟正黑體;}
 
