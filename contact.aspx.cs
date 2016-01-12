@@ -41,18 +41,25 @@ public partial class cpmtact : System.Web.UI.Page
         }
     }
     protected void BtnSend_Click(object sender, EventArgs e)
-    {        
-        string companyName = iptCompany.Value;
-        string name = iptName.Value;
+    {
+        
+        string companyName = iptCompany.Text;
+        string name = this.name.Text;
         string tel = iptNumber.Value;
         string phone = iptPhone.Value;
         string fax = iptFax.Value;
-        string mail = iptEmail.Value;
+        string mail = this.iptEmail.Text; // iptEmail.Value;
         string address = iptAddress.Value;
         string webSite = iptWebSite.Value;
         string optionItem = sltOption.Value;
         string message = txtMessage.Value;
-        string keyword = sltKeyword.Value;
+        string keyword = sltKeyword.Value;        
+
+        if(companyName == "" || name == "" || tel == "" || mail =="")
+        {
+            Response.Write("<script type='text/javascript'> alert('請確認是『必填』欄位是否已填入。');</script>");
+            return;
+        }
 
         string content = "公司名稱：" + companyName + "<p/>聯絡人：" + name + "<p/>客戶電話：" + "<p/>客戶手機：" + phone + "<p/>客戶信箱："
             + mail + "<p/>客戶地址：" + address + "<p/>客戶網站：" + webSite + "<p/>詢問事項：" + optionItem + "<p/>詢問內容：" + message + "<p/>搜尋關鍵字為：" + keyword;

@@ -18,8 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="../dist/css/bootstrapValidator.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mycontact.css"/>
+    <link rel="stylesheet" href="../dist/css/bootstrapValidator.css" />
+    <link rel="stylesheet" type="text/css" href="css/mycontact.css" />
     <link href="css/goTop.css" type="text/css" rel="stylesheet" />
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,7 +30,7 @@
     <script type="text/javascript">
         jQuery(document).ready(init);
         function init() {
-            jQuery("img[name='imgCode']").attr("src", "validate/ValidateNumber.ashx?" + Math.random());           
+            jQuery("img[name='imgCode']").attr("src", "validate/ValidateNumber.ashx?" + Math.random());
         }
         function isPassValidateCode() {
             var nowValidateNumber = jQuery.ajax({
@@ -128,49 +128,55 @@
                             <label class="col-lg-3 col-xs-12">
                                 <h4>公司名稱:</h4>
                             </label>
-                            <input id="iptCompany" runat="server" type="text" class="form-control myform-control1 wow fadeIn" placeholder="keyin your company name..." data-wow-duration="1s" />
+                            <asp:TextBox ID="iptCompany" runat="server" ValidationGroup="ck_inst" CssClass="form-control wow fadeIn" placeholder="(必填)請輸入您的公司名稱"></asp:TextBox>
+                            <asp:RequiredFieldValidator EnableClientScript="true" ID="RequiredFieldValidator1" runat="server" ErrorMessage="不可空白" ForeColor="Red" ControlToValidate="iptCompany" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>聯絡人姓名:</h4>
                             </label>
-                            <input id="iptName" runat="server" type="text" name="username" class="form-control wow fadeIn" placeholder="keyin your name..." data-wow-duration="1s" />
+                            <asp:TextBox ID="name" runat="server" ValidationGroup="ck_inst" CssClass="form-control wow fadeIn" placeholder="(必填)請輸入您的姓名"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="name_empty" runat="server" ErrorMessage="不可空白" ForeColor="Red" ControlToValidate="name" Display="Dynamic"></asp:RequiredFieldValidator>
+                            
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的電話</h4>
                             </label>
-                            <input id="iptNumber" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your tel number..." data-wow-duration="1s" />
+                            <input id="iptNumber" runat="server" type="text" class="form-control wow fadeIn" placeholder="(必填)請輸入您的聯絡電話" data-wow-duration="1s" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="不可空白" ForeColor="Red" ControlToValidate="iptNumber" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的手機</h4>
                             </label>
-                            <input id="iptPhone" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your moblie number..." data-wow-duration="1s" />
+                            <input id="iptPhone" runat="server" type="text" class="form-control wow fadeIn" placeholder="請輸入您的手機" data-wow-duration="1s" />
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的傳真</h4>
                             </label>
-                            <input id="iptFax" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your fax number.." data-wow-duration="1s" />
+                            <input id="iptFax" runat="server" type="text" class="form-control wow fadeIn" placeholder="請輸入您的傳真" data-wow-duration="1s" />
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的信箱</h4>
                             </label>
-                            <input id="iptEmail" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your E-mail address" data-wow-duration="1s" />
+                            <asp:TextBox ID="iptEmail" CssClass="form-control wow fadeIn" runat="server"  placeholder="(必填)請輸入您的電子信箱"></asp:TextBox>
+                            <asp:RegularExpressionValidator ForeColor="Red" ID="email_chk" runat="server" ErrorMessage="非E-MAIL 格式" ControlToValidate="iptEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="不可空白" ForeColor="Red" ControlToValidate="iptEmail" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的地址</h4>
                             </label>
-                            <input id="iptAddress" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your address ..." data-wow-duration="1s" />
+                            <input id="iptAddress" runat="server" type="text" class="form-control wow fadeIn" placeholder="請輸入您的地址" data-wow-duration="1s" />
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 col-xs-12">
                                 <h4>您的網站</h4>
                             </label>
-                            <input id="iptWebSite" runat="server" type="text" class="form-control wow fadeIn" placeholder="keyin your website docmain name..." data-wow-duration="1s" />
+                            <input id="iptWebSite" runat="server" type="text" class="form-control wow fadeIn" placeholder="請輸入您的網站" data-wow-duration="1s" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -178,7 +184,6 @@
                             <h4>詢問項目</h4>
                         </label>
                         <select id="sltOption" runat="server" class="form-control myform-control">
-                            <option></option>
                             <option>網站製作詢價</option>
                             <option>程式規劃需求</option>
                             <option>合作配合事項</option>
@@ -213,6 +218,7 @@
                                 <option>台南網頁設計</option>
                                 <option>高雄網頁</option>
                                 <option>高雄網頁設計</option>
+                                <option>其他</option>
                             </select>
                         </div>
                         <div class="col-lg-12 col-xs-12 padding0">
@@ -227,7 +233,7 @@
                         </div>
                         <div class="divCenter col-lg-12 col-xs-12">
                             <asp:Button Text="送出表單" CssClass="send wow fadeIn" ID="btn_submit" runat="server" OnClientClick="return isPassValidateCode();" OnClick="BtnSend_Click" />
-                            <asp:Button Text="清除"  CssClass="send wow fadeIn" ID="btn_clear" runat="server" />
+                            <asp:Button Text="清除" CssClass="send wow fadeIn" ID="btn_clear" runat="server" />
                         </div>
                     </div>
                 </div>
@@ -282,7 +288,7 @@
         <script src="js/multipage.js"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
-        
+
     </form>
 </body>
 </html>
