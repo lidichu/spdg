@@ -194,7 +194,7 @@
                             <label class="col-lg-3 col-xs-12">
                                 <h4>詢問內容:</h4>
                             </label>
-                            <textarea id="txtMessage" runat="server" class="form-control wow fadeIn" rows="10" placeholder="contact us..." data-wow-duration="1s"></textarea>
+                            <textarea id="txtMessage" runat="server" class="form-control wow fadeIn" rows="10" placeholder="請填入詢問內容" data-wow-duration="1s"></textarea>
                         </div>
 
                         <!-- this is mine -->
